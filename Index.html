@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti ❤️</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+
+    <!-- BIENVENIDA -->
+
+    <section id="bienvenida" class="pantalla activa">
+
+        <h1>Hola ❤️</h1>
+
+        <p>
+            Si estás viendo esto, es porque hay algo que llevo tiempo queriendo decirte.
+            Pero antes quiero que hagamos un pequeño viaje juntas ✨
+        </p>
+
+        <button onclick="siguientePantalla('foto1')">
+            Comenzar ❤️
+        </button>
+
+    </section>
+
+    <!-- FOTO 1 -->
+
+    <section id="foto1" class="pantalla">
+
+        <img src="foto1.jpg" class="imagen-recuerdo">
+
+        <h2 id="texto1">
+            📍 Nos conocimos. Todo empezó aquí y sin saberlo comenzaba algo muy especial ❤️
+        </h2>
+
+        <button onclick="siguientePantalla('foto2')">
+            Continuar ❤️
+        </button>
+
+    </section>
+
+    <!-- FOTO 2 -->
+
+    <section id="foto2" class="pantalla">
+
+        <img src="foto2.jpg" class="imagen-recuerdo">
+
+        <h2 id="texto2">
+            💬 Empezamos a hablar. Poco a poco quería conocerte más y más ✨
+        </h2>
+
+        <button onclick="siguientePantalla('foto3')">
+            Continuar ❤️
+        </button>
+
+    </section>
+
+    <!-- FOTO 3 -->
+
+    <section id="foto3" class="pantalla">
+
+        <img src="foto3.jpg" class="imagen-recuerdo">
+
+        <h2 id="texto3">
+            😂 Llegaron las primeras risas. Descubrí que podías alegrar cualquier día ❤️
+        </h2>
+
+        <button onclick="siguientePantalla('foto4')">
+            Continuar ❤️
+        </button>
+
+    </section>
+
+    <!-- FOTO 4 -->
+
+    <section id="foto4" class="pantalla">
+
+        <img src="foto4.jpg" class="imagen-recuerdo">
+
+        <h2 id="texto4">
+            🌙 Conversaciones largas que parecían durar minutos aunque pasaran horas 💕
+        </h2>
+
+        <button onclick="siguientePantalla('foto5')">
+            Continuar ❤️
+        </button>
+
+    </section>
+
+    <!-- FOTO 5 -->
+
+    <section id="foto5" class="pantalla">
+
+        <img src="foto5.jpg" class="imagen-recuerdo">
+
+        <h2 id="texto5">
+            ❤️ Empecé a sentir algo más. Te convertiste en alguien muy importante para mí 🌹
+        </h2>
+
+        <button onclick="siguientePantalla('foto6')">
+            Continuar ❤️
+        </button>
+
+    </section>
+
+    <!-- FOTO 6 -->
+
+    <section id="foto6" class="pantalla">
+
+        <img src="foto6.jpg" class="imagen-recuerdo">
+
+        <h2 id="texto6">
+            ✨ Hoy. Por eso estás viendo esta página, porque quería hacer algo especial para ti ❤️
+        </h2>
+
+        <button onclick="siguientePantalla('stats')">
+            Continuar ❤️
+        </button>
+
+    </section>
+
+    <!-- ESTADISTICAS -->
+
+    <section id="stats" class="pantalla">
+
+        <h1>📊 Estadísticas Importantes 📊</h1>
+
+        <p>Mensajes enviados: Muchísimos 📱</p>
+
+        <p>Sonrisas provocadas: +9999 😄</p>
+
+        <p>Veces que pensé en ti hoy: Demasiadas ❤️</p>
+
+        <p>Probabilidad de que me gustes: 100% 💕</p>
+
+        <p>Estado actual: Completamente enamorada 🥰</p>
+
+        <button onclick="siguientePantalla('carta')">
+            Continuar ❤️
+        </button>
+
+    </section>
+
+    <!-- CARTA -->
+
+    <section id="carta" class="pantalla">
+
+        <h1>💌 Una Carta Para Ti 💌</h1>
+
+        <p>
+            Hay personas que llegan a nuestra vida y dejan recuerdos.
+            Y hay personas que consiguen convertir los días normales en algo especial.
+        </p>
+
+        <p>
+            Tú eres una de esas personas.
+        </p>
+
+        <p>
+            Me encanta hablar contigo.
+            Me encanta conocerte mejor cada día.
+            Me encanta la forma en que consigues hacerme sonreír.
+        </p>
+
+        <p>
+            Y aunque podría intentar explicarlo de muchas maneras distintas...
+        </p>
+
+        <p>
+            La verdad es bastante simple:
+        </p>
+
+        <h2>❤️ Me gustas muchísimo ❤️</h2>
+
+        <button onclick="siguientePantalla('cuenta')">
+            Continuar ❤️
+        </button>
+
+    </section>
+
+    <!-- CUENTA REGRESIVA -->
+
+    <section id="cuenta" class="pantalla">
+
+        <h1>⏳ Ya casi llegamos ❤️</h1>
+
+        <div id="contador">
+            10
+        </div>
+
+        <button onclick="iniciarCuenta()">
+            Iniciar Cuenta Regresiva
+        </button>
+
+    </section>
+
+    <!-- PREGUNTA -->
+
+    <section id="pregunta" class="pantalla">
+
+        <h1 id="textoPregunta">
+
+            ❤️ ¿Puedo ser tu novia? ❤️
+
+        </h1>
+
+        <div class="botones">
+
+            <button id="btnSi" onclick="aceptar()">
+
+                💖 Sí, me encantaría
+
+            </button>
+
+            <button id="btnNo" onclick="rechazar()">
+
+                😅 No
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- FINAL -->
+
+    <section id="final" class="pantalla">
+
+        <h1>❤️ ¡SÍ! ❤️</h1>
+
+        <p>
+            No sabes lo feliz que me acabas de hacer.
+        </p>
+
+        <p>
+            Gracias por darme la oportunidad de compartir esta aventura contigo.
+        </p>
+
+        <p>
+            ❤️ 11 de noviembre ❤️
+        </p>
+
+        <h2>
+            Nuestra historia apenas comienza ✨
+        </h2>
+
+    </section>
+
+    <script src="Script.js"></script>
+
+</body>
+
+</html>
